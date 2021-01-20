@@ -1,0 +1,62 @@
+/* what */
+ .items{display: block;}
+
+ .item{display: flex;}
+
+.item__icon {
+    display:inline-block;
+    align-self: center;
+    margin-right: 10px;
+}
+
+.item__text{display: inline-block;}
+
+
+
+
+
+/* smartphones */
+@media(max-width: 500px){
+
+    #navbar{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .logo{margin-bottom: 20px;}
+
+    .showcase-contant{
+        top: 96px;
+        margin-top: -2rem;
+    }
+
+    #who{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #who .who-img,
+    #who .who-text{ flex: none;}
+
+    .who-img{ order: 2;}
+
+    .who-text{ order: 1;}
+
+    .who-img{height: 300px;}
+
+    .clients-logo__img{ width:15%;}
+
+    #contact{flex-direction: column;}
+
+    .map{
+        height: 400px;
+        flex: none;
+    }
+
+
+
+
+}

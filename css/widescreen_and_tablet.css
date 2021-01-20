@@ -1,0 +1,15 @@
+
+/* what */
+.item{
+    display: flex;
+}
+
+.item__icon {
+    align-self: center;
+    margin-right: 10px;
+}
+
+/* contact */
+.map{
+    flex: 2;
+}

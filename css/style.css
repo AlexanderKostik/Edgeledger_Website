@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.4;
+}
+
+a{ text-decoration: none;}
+
+p{margin: 0.75rem 0;}
+
+
+
+
+/* ---- Utility Classes --- */
+
+.container{
+    max-width: 1100px;
+    margin: 0px auto;
+    padding: 0 2rem;
+    overflow: hidden;
+}
+
+.text-center{text-align: center;}
+
+.text-primary{ color:#93cb52; }
+
+.l-heading{
+    font-size: 4rem;
+    margin-bottom: 0.75rem;
+    line-height: 1.1;
+}
+
+.m-heading{
+    font-size: 2rem;
+    font-weight: bolder;
+    margin-bottom: 0.75rem;
+    line-height: 1.1;
+}
+
+.btn{
+    display: inline-block;
+    color: white;
+    background-color: #93cb52;
+    padding: 0.5rem 2rem;
+    border: none;
+    border-radius: 5px;
+}
+
+.btn:hover{background-color: #7ab436;}
+
+.btn-dark{
+    color: white;
+    background-color: #333;
+}
+
+.bg-primary{
+    background-color: #93cb52;
+    color: white;
+}
+
+.bg-dark{
+    background: #333;
+    color: #fff;
+}
+
+.bg-lightr{
+    background: #f4f4f4;
+    color: #333;
+}
+
+
+/*--- Navbar ---*/
+
+#navbar{
+    display: flex;
+    justify-content: space-between;
+
+    position: sticky;
+    top: 0;
+    background-color: #333;
+    color: #fff;
+    z-index: 1;
+    padding: 1rem;
+}
+
+.logo-icon,
+.logo-text{
+    display: inline-block;
+}
+
+
+.menu{
+    display: flex;
+    align-items: center;
+}
+
+.menu-item{
+    list-style: none;
+}
+
+.menu-link{
+    color: white;
+    padding: 0.75rem;
+    margin: 0 0.25rem;
+}
+
+.menu-link:hover{ 
+    background-color: #93cb52;
+    border-radius: 5px; 
+}
+
+
+/* showcase */
+#showcase{
+    background: url('../img/showcase.jpg') no-repeat center center/cover;
+    /* background-image: url('../img/showcase.jpg');
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: cover; */
+    height: 100vh;
+    color: white;
+}
+
+.showcase-contant{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    /* width: 100%; */
+    height: 100%;
+    padding: 0 2rem;
+
+    /* overlay */
+    position: absolute;
+    top: 54px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color:rgba(0,0,0,0.4);
+}
+
+.showcase__description{
+    font-style: 1.3rem;
+    margin-bottom: 2rem;
+}
+
+/* what */
+.what__inner{
+padding: 30px 0 50px 0;
+}
+
+.items{
+    display: flex;
+    padding: 1rem;
+}
+
+.item{
+    /* display: flex;
+    flex-direction: column;
+	justify-content: center;
+	align-items: center;
+    align-content: center; */
+    flex: 1;
+    text-align: center;
+    padding: 1rem;
+}
+
+.item__icon{
+    display: inline-block;
+    background-color: #93cb52;
+    padding: 15px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.item__heading{
+    font-size: 1.17rem ;
+    font-weight: bolder;
+    padding-bottom: 10px;
+}
+
+
+/* who we are */
+#who{display: flex;}
+
+.who-text__inner{ padding: 35px; }
+
+#who .who-img,
+#who .who-text{ flex: 1;}
+
+.who-img{ background: url(../img/people.jpg) no-repeat center center/cover; }
+
+.who-text__heading{ margin-bottom: 15px;}
+
+.team-members__heading{
+    font-size: 1.17rem;
+    margin: 10px 0 0 0;
+    font-weight: bolder;  
+}
+
+.member{
+    list-style: none;
+    line-height: 3.16rem;
+    border-bottom: 1px dotted #444;
+}
+
+/* clients */
+
+.clients__inner{ margin: 25px 0 50px 0;}
+
+.clients__heading{ font-weight: bolder; }
+
+.clients-logo{
+    display: flex;
+    margin-top: 35px;
+}
+
+.clients-logo__img{
+    display: block;
+    margin: auto;
+    width: 10%;
+}
+
+/* contact */
+#contact{display: flex;}
+
+.contact-form__inner{margin: 30px;}
+
+.form__inner{padding: 15px;}
+
+.form-group{margin-top: 10px;}
+
+.contact-form,
+
+.map{
+    flex: 1;
+}
+
+.form-group label{display: block;}
+
+.form-group input,
+.form-group textarea{
+    width: 100%;
+    padding: 0.5rem;
+}
+
+[type="submit"]{width: 100%;}
+
+
+/* footer */
+.footer{
+    text-align: center;
+    padding: 30px;
+}
